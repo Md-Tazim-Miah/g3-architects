@@ -50,6 +50,9 @@ nav ul li a{
     text-align: center;
     margin-bottom: 50px;
 }
+p{
+    color: #727272;
+}
 .banner-btn{
     margin-bottom: 50px;
     text-align: center;
@@ -71,27 +74,28 @@ nav ul li a{
 }
 
 /* main section styles */
-/* features styles */
-.features{
+/* teams section styles */
+.teams{
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 70px;
     padding: 20px;
+    margin-bottom: 50px;
 }
-.feature-img{
+.team-img{
     display: grid;
     grid-template-columns: repeat(2,1fr);
     gap: 24px;
     width: 50%;
 }
-.feature-img img{
+.team-img img{
     width: 100%;
 }
-.feature-texts{
+.team-texts{
     width: 50%;
 }
-.feature-texts h2{
+.team-texts h2{
     font-size: 45px;
     font-weight: 700;
     line-height: 50px;
@@ -106,16 +110,71 @@ nav ul li a{
 .features-text{
     color:#FF900E ;
 }
-.feature-texts p{
+.team-texts p{
     margin-bottom: 20px;
     font-weight: 400;
     font-size: 16px;
-    color: #727272;
+}
+/* features section style */
+.features{
+    display: flex;
+    gap:50px;
+}
+.feature-items{
+    width: 50%;
+}
+.feature-items h2{
+    width: 60%;
+    margin-bottom: 30px;
+    border-left: 5px solid #FF900E;
+    font-size: 35px;
+    color: #131313;
+}
+
+.feature-item{
+    margin-top: 20px;
+    padding: 20px;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.06);
+    border-radius: 8px;
+}
+.feature-btn{
+    position: relative;
+    width: 50%;
+    margin-right: 50px;
+    
+}
+.feature-btn img{
+    position: absolute;
+    left: 50px;
+    z-index: 5;
+    width: 100%;
+    
+}
+.btn-experience{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 10;
+    padding: 42px 46px;
+    font-size: 65px;
+    font-weight: 700;
+    line-height: 45px;
+    color: whitesmoke;
+    background-color: #FF900E;;
+    border: none;
+    border-radius: 5px;
+}
+
+.text-experience{
+    font-size: 25px;
+    font-weight: 500;
 }
 /* media queries */
 
 /* Responsive for mobile divices */
 @media screen and (max-width:576px) {
+    /* header section styles */
     .container{
         padding: 10px 20px;
     }
@@ -155,21 +214,73 @@ nav ul li a{
         font-size: 14px;
     }
 
-    /* main section styles */
-/* features styles */
-.features{
+/* main section styles */
+/* teams styles */
+.teams{
     display: flex;
     flex-direction: column;
     padding: 0px;
 }
-.feature-img{
+.team-img{
     display: grid;
     grid-template-columns: repeat(1,1fr);
     gap: 24px;
     width: 100%;
 }
-.feature-texts{
+.team-texts{
     width: 100%;
     text-align: center;
+}
+
+
+/* features styles */
+.features{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap:0;
+}
+.feature-items{
+    width: 100%;
+}
+.feature-items h2{
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+.feature-item{
+    margin-top: 20px;
+    padding: 20px;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.06);
+    border-radius: 8px;
+}
+.feature-btn{
+    position:static;
+    width: 100%;
+    margin-right: 0;
+    
+}
+.feature-btn img{
+    position:static;
+    left: 50px;
+    z-index:0;
+    width: 100%;
+    margin: 30px 0px;
+    
+}
+.btn-experience{
+    position:static;
+    bottom: 0;
+    left: 0;
+    z-index: 0;
+    padding: 20px 36px;
+    font-size: 45px;
+    font-weight: 700;
+    line-height: 35px;
+    color: whitesmoke;
+    background-color: #FF900E;;
+    border: none;
+    border-radius: 5px;
 }
 }
